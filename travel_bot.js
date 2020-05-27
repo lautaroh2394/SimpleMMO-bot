@@ -37,13 +37,6 @@
             console.log("bot habilitado. recargar página");
         }
 
-        window.SMMObotBet = (value)=>{
-            document.cookie = `bet-value=${value}`;
-            console.log("apuesta seteada a " + value);
-        }
-
-
-
         let flagBot = document.cookie.split(";").find(e=>e.includes("botSMMO-TRAVEL"));
         if (!flagBot){
             if( confirm("Activar bot?")) {
